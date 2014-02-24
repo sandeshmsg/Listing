@@ -1,0 +1,538 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap-responsive.min.css">
+<link rel="stylesheet" href="fashion-listing.css">
+<script src="jquery.js"></script>
+<script src="bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div class="container-fluid main-container">
+		<div class="row-fluid">
+			<!-- BANNER ROW -->
+			<div class="span12 whitebg text-center">
+				<img src="http://placehold.it/1545x270/ffffff">
+			</div>
+		</div>
+		<div class="row-fluid ">
+			<!-- ACTIVE FILTERS ROW  -->
+			<div class="span9 offset3 active-filter-container">
+				<div class="active-filter clearfix">
+					<a class="close">&times;</a> <span>Lee Cooper</span>
+				</div>
+				<div class="active-filter clearfix">
+					<a class="close">&times;</a> <span>Red</span>
+				</div>
+
+			</div>
+		</div>
+		<div class="row-fluid">
+
+			<div class="span3">
+				<!-- LEFT FILTERS COLUMN  -->
+				<div class="row-fluid">
+					<div class="span12 filter chkbx">
+						<div class="filter-head clearfix">
+							<div class="filter-title">
+								<h4>Brands</h4>
+							</div>
+							<div class="filter-reset text-right"><a href="#">Reset</a></div>
+						</div>
+						<div class="selected-filter">
+							<div class="filter-items">
+								<ul>
+									<li class="filter-selected">
+										<a href="#">
+										<input type="checkbox" id="brand-1" name="brand" checked>
+										<label for="brand-1"> 
+											<span class="filter-name">Lee Cooper</span>
+										</label>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="filter-divider"></div>
+						<div class="filter-items">
+						<ul>
+							<li>
+								<a href="#">
+								<input type="checkbox" id="brand-2" name="brand" >
+								<label for="brand-2"> 
+									<span class="filter-name">Airblaster <span class="filter-count">(100)</span></span>
+								</label>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+								<input type="checkbox" id="brand-3" name="brand" >
+								<label for="brand-3"> 
+									<span class="filter-name">Analog <span class="filter-count">(50)</span></span>
+								</label>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+								<input type="checkbox" id="brand-4" name="brand" >
+								<label for="brand-3"> 
+									<span class="filter-name">Arbor <span class="filter-count">(999)</span></span>
+								</label>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+								<input type="checkbox" id="brand-5" name="brand" >
+								<label for="brand-3"> 
+									<span class="filter-name">Arbowear<span class="filter-count">(83)</span></span>
+								</label>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+								<input type="checkbox" id="brand-6" name="brand" >
+								<label for="brand-2"> 
+									<span class="filter-name">Airblaster <span class="filter-count">(100)</span></span>
+								</label>
+								</a>
+							</li> 
+							<li>
+								<a href="#">
+								<input type="checkbox" id="brand-7" name="brand" >
+								<label for="brand-3"> 
+									<span class="filter-name">Analog <span class="filter-count">(50)</span></span>
+								</label>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+								<input type="checkbox" id="brand-8" name="brand" >
+								<label for="brand-3"> 
+									<span class="filter-name">Arbor <span class="filter-count">(999)</span></span>
+								</label>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+								<input type="checkbox" id="brand-9" name="brand" >
+								<label for="brand-3"> 
+									<span class="filter-name">Arbowear <span class="filter-count">(83)</span></span>
+								</label>
+								</a>
+							</li>
+						</ul>
+						<div class="filter-divider"></div>
+							<a href="#" class="view-all-filter">View all brands</a>
+						</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span12 filter">
+						<div class="filter-head clearfix">
+							<div class="filter-title">
+								<h4>Price</h4>
+							</div>
+							<div class="filter-reset text-right"><a href="#">Reset</a></div>
+						</div>
+						<div class="filter-items">
+						<ul>
+							<li>
+								<a href="#">Under Rs.299<span class="filter-count">(25)</span></a>
+							</li>
+							<li>
+							    <a href="#">Rs.299 - Rs.599<span class="filter-count">(25)</span></a>
+							</li>
+							<li>
+								<a href="#">Rs.599 - Rs.1099<span class="filter-count">(25)</span></a>
+							</li>
+							<li>
+								<a href="#">Rs.1099 - Rs.2099<span class="filter-count">(25)</span></a>
+							</li>
+						</ul>
+						</div>
+					</div>
+				</div>
+			
+			<div class="row-fluid">
+					<div class="span12 filter chkbx">
+						<div class="filter-head clearfix">
+							<div class="filter-title">
+								<h4>Size</h4>
+							</div>
+						</div>
+						<div class="filter-items">
+						<ul>
+							<li>
+								<a href="#">
+								<input type="checkbox" id="brand-2" name="brand" >
+								<label for="brand-2"> 
+									<span class="filter-name">S<span class="filter-count">(999)</span></span>
+								</label>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+								<input type="checkbox" id="brand-3" name="brand" >
+								<label for="brand-3"> 
+									<span class="filter-name">M<span class="filter-count">(999)</span></span>
+								</label>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+								<input type="checkbox" id="brand-4" name="brand" >
+								<label for="brand-3"> 
+									<span class="filter-name">L<span class="filter-count">(999)</span></span>
+								</label>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+								<input type="checkbox" id="brand-5" name="brand" >
+								<label for="brand-3"> 
+									<span class="filter-name">XL<span class="filter-count">(999)</span></span>
+								</label>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+								<input type="checkbox" id="brand-2" name="brand" >
+								<label for="brand-2"> 
+									<span class="filter-name">XXL<span class="filter-count">(999)</span></span>
+								</label>
+								</a>
+							</li>
+						</ul>
+						<div class="filter-divider"></div>
+							<a href="#" class="view-all-filter">What is my size?</a>
+						
+					</div>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span12 filter chkbx">
+					<div class="filter-head clearfix">
+							<div class="filter-title">
+								<h4>Color</h4>
+							</div>
+							<div class="filter-reset text-right"><a href="#">Reset</a></div>
+					</div>
+					<div class="selected-filter">
+							<div class="filter-items">
+								<ul>
+									<li class="filter-selected">
+										<a href="#">
+										<input type="checkbox" id="color-1" name="brand" checked>
+										<label for="color-1"> 
+											<span class="filter-name">Red</span>
+										</label>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="filter-divider"></div>
+						<div class="filter-items color-filter">
+							<a href="#"><span class="color-filter-item" style="background-color:blue"></span></a>
+							<a href="#"><span class="color-filter-item" style="background-color:aqua"></span></a>
+							<a href="#"><span class="color-filter-item" style="background-color:green"></span></a>
+							<a href="#"><span class="color-filter-item" style="background-color:orange"></span></a>
+							<a href="#"><span class="color-filter-item" style="background-color:chocolate"></span></a>
+							<a href="#"><span class="color-filter-item" style="background-color:brown"></span></a>
+							<a href="#"><span class="color-filter-item" style="background-color:red"></span></a>
+							<a href="#"><span class="color-filter-item" style="background-color:pink"></span></a>
+							<a href="#"><span class="color-filter-item" style="background-color:white"></span></a>
+							<a href="#"><span class="color-filter-item" style="background-color:black"></span></a>
+							<a href="#"><span class="color-filter-item" style="background-color:yellow"></span></a>
+							<a href="#"><span class="color-filter-item" style="background-color:green"></span></a>
+						</div>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span12 filter chkbx">
+						<div class="filter-head clearfix">
+							<div class="filter-title">
+								<h4>SALes</h4>
+							</div>
+						</div>
+						<div class="filter-items">
+						<ul>
+							<li>
+								<a href="#">>10% Off</a>
+							</li>
+							<li>
+								<a href="#">>20% Off</a>
+							</li>
+							<li>
+								<a href="#">>30% Off</a>
+							</li>
+							<li>
+								<a href="#">>40% Off</a>
+							</li>
+						</ul>
+						</div>
+				</div>
+			</div>
+			
+		</div>
+			
+			<div class="span9">
+				<!-- RIGHT FILTERS COLUMN  -->
+				<div class="row-fluid ">
+					<!-- SORT/TITLE ROW  -->
+					<div class="span6 list-header">
+						<h3 class="list-title pull-left">Men's TShirt</h3>
+						<span class="list-count pull-left">1102 results found</span>
+					</div>
+					<div class="span6 sort-by">
+						<div class="dropdown">
+							<a class="dropdown-toggle" id="drop4" role="button"
+								data-toggle="dropdown" href="#">Price: <span class="selected-sort">Lowest</span> <b class="caret"></b></a>
+							<ul id="menu1" class="dropdown-menu" role="menu"
+								aria-labelledby="drop4">
+								<li role="presentation"><a role="menuitem" tabindex="-1"
+									href="#">Lowest</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1"
+									href="#">Highest</a></li>
+							</ul>
+						</div>
+						<a href="#" class="sort-option">Featured</a> <span
+							class="sort-by-label">Sort By:</span>
+
+					</div>
+				</div>
+				<div class="row-fluid product-list show-grid">
+					<!-- PRODUCT LISTING LOOP -->
+					<div class="span4 product-list-product">
+						<div class="product-image">
+							<img src="http://placehold.it/426x450/ffffff">
+						</div>
+						<div class="product-details">
+							<div class="product-title">Timberland 4004R Boot Company Mens Muldark Safari Chukka...</div>
+							<div class="product-price clearfix">
+								<div class="product-selling-price">Rs.2,799</div>
+								<div class="product-actual-price">Rs. 3,500</div>
+								<div class="product-offer">40% off</div>
+							</div>
+							<div class="filter-divider"></div>
+							<div class="product-size-container clearfix">
+								<span class="product-variant-label">Available sizes:</span>
+								<div class="varient-container">
+									&nbsp;
+									<a href="#" class="product-size">S</a>
+									<span class="size-seperator">/</span><a href="#" class="product-size">M</a>
+									<span class="size-seperator">/</span><a href="#" class="product-size">L</a>
+									<span class="size-seperator">/</span><a href="#"  class="product-size not-available">XL</a>
+									<span class="size-seperator">/</span><a href="#"  class="product-size">XXL</a>
+								</div>
+							</div>
+							<div class="filter-divider"></div>
+							<div class="product-color-container clearfix">
+								<span class="product-variant-label">Available colors:</span>
+								<div class="varient-container">
+									<a href="#"><span class="available-colors" style="background-color:blue"></span></a>
+									<a href="#"><span class="available-colors" style="background-color:aqua"></span></a>
+									<a href="#"><span class="available-colors" style="background-color:green"></span></a>
+									<a href="#"><span class="available-colors" style="background-color:orange"></span></a>
+									<a href="#"><span class="available-colors" style="background-color:chocolate"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="span4 product-list-product">
+						<div class="product-image">
+							<img src="http://placehold.it/426x450/ffffff">
+						</div>
+						<div class="product-details">
+							<div class="product-title">Timberland 4004R Boot Company Mens</div>
+							<div class="product-price clearfix">
+								<div class="product-selling-price">Rs.2,799</div>
+							</div>
+							<div class="filter-divider"></div>
+							<div class="product-size-container clearfix">
+								<span class="product-variant-label">Available sizes:</span>
+								<div class="varient-container">
+									&nbsp;
+									<a href="#" class="product-size">S</a>
+									<span class="size-seperator">/</span><a href="#" class="product-size">M</a>
+									<span class="size-seperator">/</span><a href="#" class="product-size">L</a>
+									<span class="size-seperator">/</span><a href="#"  class="product-size not-available">XL</a>
+									<span class="size-seperator">/</span><a href="#"  class="product-size">XXL</a>
+								</div>
+							</div>
+							<div class="filter-divider"></div>
+							<div class="product-color-container clearfix">
+								<span class="product-variant-label">Available colors:</span>
+								<div class="varient-container">
+									<a href="#"><span class="available-colors" style="background-color:blue"></span></a>
+									<a href="#"><span class="available-colors" style="background-color:aqua"></span></a>
+									<a href="#"><span class="available-colors" style="background-color:green"></span></a>
+									<a href="#"><span class="available-colors" style="background-color:orange"></span></a>
+									<a href="#"><span class="available-colors" style="background-color:chocolate"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="span4 product-list-product">
+						<div class="product-image">
+							<img src="http://placehold.it/426x450/ffffff">
+						</div>
+						<div class="product-details">
+							<div class="product-title">Timberland 4004R Boot Company Mens Muldark Safari Chukka...</div>
+							<div class="product-price clearfix">
+								<div class="product-selling-price">Rs.2,799</div>
+								<div class="product-actual-price">Rs. 3,500</div>
+								<div class="product-offer">40% off</div>
+							</div>
+							<div class="filter-divider"></div>
+							<div class="product-size-container clearfix">
+								<span class="product-variant-label">Available sizes:</span>
+								<div class="varient-container">
+									&nbsp;
+									<a href="#" class="product-size">S</a>
+									<span class="size-seperator">/</span><a href="#" class="product-size">M</a>
+									<span class="size-seperator">/</span><a href="#" class="product-size">L</a>
+									<span class="size-seperator">/</span><a href="#"  class="product-size not-available">XL</a>
+									<span class="size-seperator">/</span><a href="#"  class="product-size">XXL</a>
+								</div>
+							</div>
+							<div class="filter-divider"></div>
+							<div class="product-color-container clearfix">
+								<span class="product-variant-label">Available colors:</span>
+								<div class="varient-container">
+									<a href="#"><span class="available-colors" style="background-color:blue"></span></a>
+									<a href="#"><span class="available-colors" style="background-color:aqua"></span></a>
+									<a href="#"><span class="available-colors" style="background-color:green"></span></a>
+									<a href="#"><span class="available-colors" style="background-color:orange"></span></a>
+									<a href="#"><span class="available-colors" style="background-color:chocolate"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="row-fluid product-list show-grid">
+					<!-- PRODUCT LISTING LOOP -->
+					<div class="span4 product-list-product">
+						<div class="product-image">
+							<img src="http://placehold.it/426x450/ffffff">
+						</div>
+						<div class="product-details">
+							<div class="product-title">Timberland 4004R Boot Company Mens Muldark Safari Chukka...</div>
+							<div class="product-price clearfix">
+								<div class="product-selling-price">Rs.2,799</div>
+								<div class="product-actual-price">Rs. 3,500</div>
+								<div class="product-offer">40% off</div>
+							</div>
+							<div class="filter-divider"></div>
+							<div class="product-size-container clearfix">
+								<span class="product-variant-label">Available sizes:</span>
+								<div class="varient-container">
+									&nbsp;
+									<a href="#" class="product-size">S</a>
+									<span class="size-seperator">/</span><a href="#" class="product-size">M</a>
+									<span class="size-seperator">/</span><a href="#" class="product-size">L</a>
+									<span class="size-seperator">/</span><a href="#"  class="product-size not-available">XL</a>
+									<span class="size-seperator">/</span><a href="#"  class="product-size">XXL</a>
+								</div>
+							</div>
+							<div class="filter-divider"></div>
+							<div class="product-color-container clearfix">
+								<span class="product-variant-label">Available colors:</span>
+								<div class="varient-container">
+									<a href="#"><span class="available-colors" style="background-color:blue"></span></a>
+									<a href="#"><span class="available-colors" style="background-color:aqua"></span></a>
+									<a href="#"><span class="available-colors" style="background-color:green"></span></a>
+									<a href="#"><span class="available-colors" style="background-color:orange"></span></a>
+									<a href="#"><span class="available-colors" style="background-color:chocolate"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="span4 product-list-product">
+						<div class="product-image">
+							<img src="http://placehold.it/426x450/ffffff">
+						</div>
+						<div class="product-details">
+							<div class="product-title">Timberland 4004R Boot Company Mens</div>
+							<div class="product-price clearfix">
+								<div class="product-selling-price">Rs.2,799</div>
+							</div>
+							<div class="filter-divider"></div>
+							<div class="product-size-container clearfix">
+								<span class="product-variant-label">Available sizes:</span>
+								<div class="varient-container">
+									&nbsp;
+									<a href="#" class="product-size">S</a>
+									<span class="size-seperator">/</span><a href="#" class="product-size">M</a>
+									<span class="size-seperator">/</span><a href="#" class="product-size">L</a>
+									<span class="size-seperator">/</span><a href="#"  class="product-size not-available">XL</a>
+									<span class="size-seperator">/</span><a href="#"  class="product-size">XXL</a>
+								</div>
+							</div>
+							<div class="filter-divider"></div>
+							<div class="product-color-container clearfix">
+								<span class="product-variant-label">Available colors:</span>
+								<div class="varient-container">
+									<a href="#"><span class="available-colors" style="background-color:blue"></span></a>
+									<a href="#"><span class="available-colors" style="background-color:aqua"></span></a>
+									<a href="#"><span class="available-colors" style="background-color:green"></span></a>
+									<a href="#"><span class="available-colors" style="background-color:orange"></span></a>
+									<a href="#"><span class="available-colors" style="background-color:chocolate"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="span4 product-list-product">
+						<div class="product-image">
+							<img src="http://placehold.it/426x450/ffffff">
+						</div>
+						<div class="product-details">
+							<div class="product-title">Timberland 4004R Boot Company Mens Muldark Safari Chukka...</div>
+							<div class="product-price clearfix">
+								<div class="product-selling-price">Rs.2,799</div>
+								<div class="product-actual-price">Rs. 3,500</div>
+								<div class="product-offer">40% off</div>
+							</div>
+							<div class="filter-divider"></div>
+							<div class="product-size-container clearfix">
+								<span class="product-variant-label">Available sizes:</span>
+								<div class="varient-container">
+									&nbsp;
+									<a href="#" class="product-size">S</a>
+									<span class="size-seperator">/</span><a href="#" class="product-size">M</a>
+									<span class="size-seperator">/</span><a href="#" class="product-size">L</a>
+									<span class="size-seperator">/</span><a href="#"  class="product-size not-available">XL</a>
+									<span class="size-seperator">/</span><a href="#"  class="product-size">XXL</a>
+								</div>
+							</div>
+							<div class="filter-divider"></div>
+							<div class="product-color-container clearfix">
+								<span class="product-variant-label">Available colors:</span>
+								<div class="varient-container">
+									<a href="#"><span class="available-colors" style="background-color:blue"></span></a>
+									<a href="#"><span class="available-colors" style="background-color:aqua"></span></a>
+									<a href="#"><span class="available-colors" style="background-color:green"></span></a>
+									<a href="#"><span class="available-colors" style="background-color:orange"></span></a>
+									<a href="#"><span class="available-colors" style="background-color:chocolate"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="row-fluid whitebg show-grid">
+			<div class="bottom-container-1"><img src="img/bottom-img1.png"/></div>
+			<div class="bottom-container-2"><img src="img/bottom-img2.png"/></div>
+		</div>
+	</div>
+
+</body>
+</html>
